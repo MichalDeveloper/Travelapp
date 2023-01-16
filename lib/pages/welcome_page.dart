@@ -52,7 +52,7 @@ class _WelcomePageState extends State<WelcomePage> {
                     children: [
                       AppLargeText(text: "Trips"),
                       AppText(text: "Mountain", size: 30,),
-                      SizedBox(height: 20,),
+                      const SizedBox(height: 20,),
                       Container(
                         width: 250,
                         child: AppText(
@@ -61,7 +61,7 @@ class _WelcomePageState extends State<WelcomePage> {
                           size: 14,
                         ),
                       ),
-                      SizedBox(height: 40,),
+                      const SizedBox(height: 40,),
                       GestureDetector(
                         onTap: (){
                           BlocProvider.of<AppCubits>(context).getData();

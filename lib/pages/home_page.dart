@@ -39,7 +39,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                     padding: const EdgeInsets.only(top: 70, left: 20),
                     child: Row(
                       children: [
-                        Icon(Icons.menu, size: 30, color: Colors.black54),
+                        const Icon(Icons.menu, size: 30, color: Colors.black54),
                         Expanded(child: Container()),
                         Container(
                           margin: const EdgeInsets.only(right: 20),
@@ -53,7 +53,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                       ],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                   //discover text
@@ -61,7 +61,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                     margin: const EdgeInsets.only(left: 20),
                     child: AppLargeText(text: "Discover"),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   //tabbar
@@ -78,9 +78,9 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                           indicator:
                           CircleTabIndicator(color: AppColors.mainColor, radius: 4),
                           tabs: [
-                            Tab(text: "Places"),
-                            Tab(text: "Inspiration"),
-                            Tab(text: "Emotions"),
+                            const Tab(text: "Places"),
+                            const Tab(text: "Inspiration"),
+                            const Tab(text: "Emotions"),
                           ]),
                     ),
                   ),
@@ -116,7 +116,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                         ListView.builder(
                             itemBuilder: (context, index){
                           return ListTile(
-                            leading: Icon(Icons.account_circle),
+                            leading: const Icon(Icons.account_circle),
                             title: Text("Line "+(index+1).toString()),
                             selectedTileColor:Colors.green[400],
                             onTap: () {
@@ -126,11 +126,11 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                             },
                           );
                         }),
-                        Text("Bye")
+                        const Text("Bye")
                       ],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                   Container(
@@ -146,7 +146,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                       ],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   Container(
@@ -173,7 +173,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                                           image: AssetImage("img/"+images.keys.elementAt(index)),
                                           fit: BoxFit.cover)),
                                 ),
-                                SizedBox(height: 10,),
+                                const SizedBox(height: 10,),
                                 Container(
                                   child: AppText(
                                     text: images.values.elementAt(index),

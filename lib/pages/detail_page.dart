@@ -52,7 +52,7 @@ class _DetailPageState extends State<DetailPage> {
                       IconButton(onPressed: (){
                         BlocProvider.of<AppCubits>(context).goHome();
                       },
-                        icon: Icon(Icons.menu),
+                        icon: const Icon(Icons.menu),
                         color: Colors.white,
                       )
                     ],
@@ -91,11 +91,11 @@ class _DetailPageState extends State<DetailPage> {
                           Row(
                             children: [
                               Icon(Icons.location_on, color:AppColors.mainColor, ),
-                              SizedBox(width: 5,),
+                              const SizedBox(width: 5,),
                               AppText(text: detail.place.location, color: AppColors.textColor1,)
                             ],
                           ),
-                          SizedBox(height: 20,),
+                          const SizedBox(height: 20,),
                           Row(
                             children: [
                               Wrap(
@@ -103,15 +103,15 @@ class _DetailPageState extends State<DetailPage> {
                                   return Icon(Icons.star, color:index<detail.place.stars?AppColors.starColor:AppColors.textColor2);
                                 }),
                               ),
-                              SizedBox(width: 10,),
+                              const SizedBox(width: 10,),
                               AppText(text: "(5.0)", color: AppColors.textColor2,)
                             ],
                           ),
-                          SizedBox(height: 25,),
+                          const SizedBox(height: 25,),
                           AppLargeText(text: "People", color:Colors.black.withOpacity(0.8),size: 20,),
-                          SizedBox(height: 5,),
+                          const SizedBox(height: 5,),
                           AppText(text: "Number of people in your group",color: AppColors.mainTextColor,),
-                          SizedBox(height: 10,),
+                          const SizedBox(height: 10,),
                           Wrap(
                             children: List.generate(5, (index) {
                               return InkWell(
@@ -132,9 +132,9 @@ class _DetailPageState extends State<DetailPage> {
                               );
                             }),
                           ),
-                          SizedBox(height: 20,),
+                          const SizedBox(height: 20,),
                           AppLargeText(text: "Description", color:Colors.black.withOpacity(0.8), size:20),
-                          SizedBox(height: 10,),
+                          const SizedBox(height: 10,),
                           AppText(text: detail.place.description, color:AppColors.mainTextColor),
                         ],
                       ),
